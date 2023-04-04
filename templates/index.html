@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timezones</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Timezones</h1>
+    <div class="time-block">
+        <h2>Mumbai, India</h2>
+        <p id="mumbai-time">{{ india_time }}</p>
+    </div>
+    <div class="time-block">
+        <h2>New York City, NY, USA</h2>
+        <p id="ny-time">{{ ny_time }}</p>
+    </div>
+    <div class="time-block">
+        <h2>Tokyo, Japan</h2>
+        <p id="tokyo-time">{{ tokyo_time }}</p>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
